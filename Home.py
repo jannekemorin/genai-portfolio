@@ -73,5 +73,4 @@ with col1:
     )
 
 with col2:
-    if not is_mobile():
-        st.image("./assets/Graphic.png", width=500)  # Adjust width as needed
+    st.image("./assets/Graphic.png", width=500)  # Adjust width as needed
