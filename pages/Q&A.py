@@ -8,7 +8,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from assets.shared import *
 
 # Configure the API key
-genai.configure(api_key=os.environ["API_KEY"])
+genai.configure(api_key=st.secrets["API_KEY"])
 
 # Set session state variables
 if "button_question" not in st.session_state:
