@@ -69,4 +69,4 @@ with col1:
 
 with col2:
     # Display image with adjusted size
-    st.image("./assets/Graphic.png", width=500)  # Adjust width as needed
+    st.image("./assets/Graphic3.png", width=500)  # Adjust width as needed
