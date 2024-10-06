@@ -85,5 +85,5 @@ custom_input = st.text_input("Type your question here:",
 # Display the question and result only if there is a user question and a response
 if st.session_state.user_question and st.session_state.response:
     st.divider()
-    st.markdown(f"**{st.session_state.user_question}**")
+    st.subheader(f"**{st.session_state.user_question}**")
     st.markdown(st.session_state.response.text)
