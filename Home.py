@@ -41,6 +41,12 @@ with col1:
     
     if st.button("🗨️ Resume Q&A"):
         st.switch_page("pages/Q&A.py")
+
+with col2:
+    st.image("./assets/Graphic.png", width=500)  # Adjust width as needed
+    
+col11, col12 = st.columns([1, 2])
+with col11:
     st.divider()
     
     # Add links for LinkedIn and email with icons
@@ -71,6 +77,3 @@ with col1:
         """,
         unsafe_allow_html=True
     )
-
-with col2:
-    st.image("./assets/Graphic.png", width=500)  # Adjust width as needed
