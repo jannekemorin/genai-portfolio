@@ -1,4 +1,8 @@
 import streamlit as st
+import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from assets.shared import *
 
 # Set page configuration
 st.set_page_config(page_title="Janneke Clever", layout="wide")
@@ -33,26 +37,30 @@ with col1:
         mime="application/pdf"
     )
     st.divider()
+    
     # Add links for LinkedIn and email with icons
+    LI_icon = encode_image_to_base64("assets/LinkedIn.png")
+    GH_icon = encode_image_to_base64("assets/GitHub.png")
+    email_icon = encode_image_to_base64("assets/Email.png")
     st.markdown(
-        """
+        f"""
         <h3>Connect with me:</h3>
-        <p style="margin-bottom: 10px;">
+        <p style="margin-bottom: 15px;">
             <a href="https://www.linkedin.com/in/jannekeclever/" target="_blank" style="text-decoration: none; color: black;">
-                <img src="assets/LinkedIn.png" width="25" height="25" style="vertical-align: middle;" />
+                <img src="data:image/png;base64,{LI_icon}" width="30" height="30" style="vertical-align: middle; margin-right: 8px;" />
                 LinkedIn
             </a>
         </p>
-        <p>
+        <p style="margin-bottom: 15px;">
             <a href="mailto:jannekemorin@gmail.com" style="text-decoration: none; color: black;">
-                <img src="assets/Email.png" width="25" height="25" style="vertical-align: middle;" />
+                <img src="data:image/png;base64,{email_icon}" width="30" height="30" style="vertical-align: middle; margin-right: 8px;" />
                 Email
             </a>
         </p>
-        <p>
+        <p style="margin-bottom: 15px;">
             <a href="https://github.com/jannekemorin" style="text-decoration: none; color: black;">
-                <img src="assets/GitHub.png" width="25" height="25" style="vertical-align: middle;" />
-                Email
+                <img src="data:image/png;base64,{GH_icon}" width="30" height="30" style="vertical-align: middle; margin-right: 8px;" />
+                GitHub
             </a>
         </p>
         """,

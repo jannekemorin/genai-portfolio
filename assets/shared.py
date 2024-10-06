@@ -1,3 +1,5 @@
+import base64
+
 PREDEFINED_QUESTIONS = [
     "👩‍💻 What is Janneke's current role?",
     "💼 What are Janneke's top skills?",
@@ -120,3 +122,8 @@ MODEL_DICT = {
     "gemini-1.5-pro-exp-0827 - tasks requiring deep analysis and extended context.":"gemini-1.5-pro-exp-0827",
     "gemini-1.5-flash-exp-0827 - tasks requiring quick responses.":"gemini-1.5-flash-exp-0827"
 }
+
+# Function to encode an image to Base64
+def encode_image_to_base64(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
