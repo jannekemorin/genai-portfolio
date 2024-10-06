@@ -1,6 +1,7 @@
 import base64
 from user_agents import parse
 import streamlit as st
+from streamlit_javascript import st_javascript
 
 PREDEFINED_QUESTIONS = [
     "👩‍💻 What is Janneke's current role?",
@@ -130,6 +131,6 @@ def encode_image_to_base64(image_path):
 
 # Function to check if user is on a mobile phone
 def is_mobile():
-    user_agent = st.request.headers.get('User-Agent', '')
-    parsed_ua = parse(user_agent)
-    return parsed_ua.is_mobile
+    ua_string = st_javascript("""window.navigator.userAgent;""")
+    user_agent = parse(ua_string)
+    return user_agent.is_mobile

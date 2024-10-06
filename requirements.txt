@@ -1,3 +1,4 @@
 streamlit
 google.generativeai
 user_agents
+streamlit_javascript
