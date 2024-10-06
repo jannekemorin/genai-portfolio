@@ -54,12 +54,23 @@ def send_prompt(input_question, question_type):
 
     Question: {st.session_state.user_question}
     """
-
-    # Generate a response from the model
-    model = genai.GenerativeModel(MODEL_DICT[st.session_state.selected_model])
-    st.session_state.response = model.generate_content(prompt)
-    #except:
-        #st.warning("Oops! It looks like we've reached our chat limit for now. Please try again later. Thank you for your patience!")
+    
+    model_version = MODEL_DICT[st.session_state.selected_model]
+    model_list = []
+    
+    if model_version == "Flash":
+        model_list = GEMINI_FLASH_MODELS
+    else:
+        model_list = GEMINI_PRO_MODELS
+        
+    for model in model_list:
+        try:
+            # Initialize and use the generative model
+            model = genai.GenerativeModel(model_version)
+            st.session_state.response = model.generate_content(prompt)
+            break  # Exit loop if successful
+        except:
+            st.warning("Sorry, but it seems we've reached the chat limit for the current model. Please try selecting a different model or come back later. I appreciate your understanding and patience!")
 
 # Add three randomized questions columns
 col1, col2, col3 = st.columns(3)

@@ -88,11 +88,11 @@ PERSONAL INFORMATION
 - Dog Lover: Loves dogs
 """
 
-CUSTOM_BUTTON_MD ="""
+CUSTOM_BUTTON_MD = """
 <style>
 div.stButton > button:first-child {
-    font-size: 18px;
-    padding: 15px; /* Padding for button */
+    font-size: 1em; /* Use em for relative font size */
+    padding: 1em; /* Use em for relative padding */
     color: #333; /* Dark text color */
     background-color: #f9f9f9; /* Light grey background */
     border: 1px solid #ddd; /* Slightly darker grey border */
@@ -103,7 +103,8 @@ div.stButton > button:first-child {
     margin: 10px 0;
     cursor: pointer;
     transition-duration: 0.3s;
-    height: 100px; /* Fixed height for all buttons */
+    height: auto; /* Allow height to adjust automatically */
+    min-height: 100px; /* Set a minimum height */
 }
 div.stButton > button:first-child:hover {
     background-color: #e0e0e0;
@@ -112,20 +113,12 @@ div.stButton > button:first-child:hover {
 }
 </style>
 """
+GEMINI_FLASH_MODELS = ["gemini-1.5-flash-exp-0827", "gemini-1.5-flash", "gemini-1.5-flash-002", "gemini-1.5-flash-8b", "gemini-1.5-flash-8b-exp-0924"]
+GEMINI_PRO_MODELS = ["gemini-1.5-pro-002", "gemini-1.5-pro", "gemini-1.5-pro-exp-0827", "gemini-1.0-pro"]
 
 MODEL_DICT = {
-    "gemini-1.5-flash-exp-0827 - tasks requiring quick responses.":"gemini-1.5-flash-exp-0827",
-    "gemini-1.5-flash-8b-exp-0924 - tasks requiring quick responses.":"gemini-1.5-flash-8b-exp-0924",
-    "gemini-1.5-flash - tasks requiring quick responses.":"gemini-1.5-flash",
-    "gemini-1.5-flash-002 - tasks requiring quick responses.":"gemini-1.5-flash-002",
-    "gemini-1.5-flash-8b - tasks requiring quick responses.":"gemini-1.5-flash-8b",
-    "gemini-1.5-pro-002 - tasks requiring deep analysis and extended context.":"gemini-1.5-pro-002",
-    "gemini-1.5-pro - tasks requiring deep analysis and extended context.":"gemini-1.5-pro",
-    "gemini-1.5-pro-exp-0827 - tasks requiring deep analysis and extended context.":"gemini-1.5-pro-exp-0827",
-    "gemma-2-2b-it - balanced approach for both quick responses and detailed analysis.":"gemma-2-2b-it",
-    "gemma-2-9b-it - balanced approach for both quick responses and detailed analysis.":"gemma-2-9b-it",
-    "gemma-2-7b-it - balanced approach for both quick responses and detailed analysis.":"gemma-2-7b-it",
-    "gemini-1.0-pro - balanced approach for both quick responses and detailed analysis.":"gemini-1.0-pro"
+    "Gemini Flash - tasks requiring quick responses.":"Flash",
+    "Gemini Pro - tasks requiring deep analysis and extended context.":"Pro"
 }
 
 # Function to encode an image to Base64
