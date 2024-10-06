@@ -17,9 +17,9 @@ with col1:
     st.markdown("### **Aspiring AI/ML Specialist**")
     st.markdown(
         f"""
-        I am passionate about leveraging technology to solve real-world problems. 
-        I enjoy exploring new AI/ML tools and techniques as well as collaborating with others on innovative projects.
-        \n\nPlease check out my resume below or visit the :rainbow-background[Q&A tab] to learn more!
+        I am passionate about leveraging :red-background[technology] to solve real-world problems. 
+        I enjoy exploring new :red-background[AI/ML] tools and techniques as well as collaborating with others on innovative projects.
+        \n\nPlease check out my resume below or visit the Q&A tab to learn more!
         """
     )
     
@@ -37,6 +37,9 @@ with col1:
         file_name="Janneke's Resume.pdf",  # Filename for the downloaded file
         mime="application/pdf"
     )
+    
+    if st.button("🗨️ Resume Q&A"):
+        st.switch_page("pages/Q&A.py")
     st.divider()
     
     # Add links for LinkedIn and email with icons
