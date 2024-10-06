@@ -1,9 +1,9 @@
+# Import packages
 import google.generativeai as genai
 import os
 import sys
 import streamlit as st
 import random
-
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from assets.shared import *
 
@@ -11,10 +11,8 @@ from assets.shared import *
 genai.configure(api_key=st.secrets["API_KEY"])
 
 # Set session state variables
-if "button_question" not in st.session_state:
-    st.session_state.button_question = ""
-if "custom_question" not in st.session_state:
-    st.session_state.custom_question = ""
+if "custom_input" not in st.session_state:
+    st.session_state.custom_input = ""
 if "user_question" not in st.session_state:
     st.session_state.user_question = ""
 if "response" not in st.session_state:
@@ -41,10 +39,8 @@ st.markdown("Try a sample question or add your own below!")
 def send_prompt(input_question, question_type):
     if question_type == "button":
         st.session_state.user_question = input_question
-        st.session_state.custom_question = ""  # Clear custom question
     else:
-        st.session_state.user_question = st.session_state.custom_question
-        st.session_state.button_question = ""  # Clear button question
+        st.session_state.user_question = st.session_state.custom_input
 
     prompt = f"""
     As an advocate for the candidate, please focus exclusively on the following resume details:
@@ -62,7 +58,7 @@ def send_prompt(input_question, question_type):
     model = genai.GenerativeModel(MODEL_DICT[st.session_state.selected_model])
     st.session_state.response = model.generate_content(prompt)
 
-# Add three randomized questions to the columns
+# Add three randomized questions columns
 col1, col2, col3 = st.columns(3)
 with col1:
     q1 = st.session_state.button_questions[0]
@@ -78,12 +74,12 @@ with col3:
 
 # Create a text input for custom questions
 custom_input = st.text_input("Type your question here:", 
-                              key="custom_question", 
+                              key="custom_input", 
                               on_change=send_prompt, 
                               args=(None, "input"))  # Use session state directly here
 
 # Display the question and result only if there is a user question and a response
 if st.session_state.user_question and st.session_state.response:
     st.divider()
-    st.subheader(f"**{st.session_state.user_question}**")
+    st.subheader(st.session_state.user_question)
     st.markdown(st.session_state.response.text)
