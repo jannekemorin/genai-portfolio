@@ -114,7 +114,7 @@ div.stButton > button:first-child:hover {
 </style>
 """
 GEMINI_FLASH_MODELS = ["gemini-1.5-flash-exp-0827", "gemini-1.5-flash", "gemini-1.5-flash-002", "gemini-1.5-flash-8b", "gemini-1.5-flash-8b-exp-0924"]
-GEMINI_PRO_MODELS = ["gemini-1.5-pro-002", "gemini-1.5-pro", "gemini-1.5-pro-exp-0827", "gemini-1.0-pro"]
+GEMINI_PRO_MODELS = ["gemini-1.5-pro-exp-0827", "gemini-1.5-pro-002", "gemini-1.5-pro", "gemini-1.0-pro"]
 
 MODEL_DICT = {
     "Gemini Flash - tasks requiring quick responses.":"Flash",
