@@ -37,7 +37,6 @@ st.markdown("Try a sample question or add your own below!")
 
 # Function to call API based on question type
 def send_prompt(input_question, question_type):
-    #try:
     if question_type == "button":
         st.session_state.user_question = input_question
     else:
@@ -56,21 +55,22 @@ def send_prompt(input_question, question_type):
     """
     
     model_version = MODEL_DICT[st.session_state.selected_model]
-    model_list = []
     
-    if model_version == "Flash":
-        model_list = GEMINI_FLASH_MODELS
-    else:
-        model_list = GEMINI_PRO_MODELS
-        
-    for model in model_list:
+    # Determine which list of models to use
+    model_list = GEMINI_FLASH_MODELS if model_version == "Flash" else GEMINI_PRO_MODELS
+    
+    for model_name in model_list:
         try:
             # Initialize and use the generative model
-            model = genai.GenerativeModel(model_version)
+            model = genai.GenerativeModel(model_name)
             st.session_state.response = model.generate_content(prompt)
-            break  # Exit loop if successful
-        except:
-            st.warning("Sorry, but it seems we've reached the chat limit for the current model. Please try selecting a different model or come back later. I appreciate your understanding and patience!")
+            if st.session_state.response:  # Check if response is successful
+                break  # Exit loop if successful
+        except Exception as e:
+            print(f"Error with model {model_name}: {e}")
+    
+    if not st.session_state.response:
+        st.warning("Sorry, but it seems we've reached the chat limit for all models. Please try again later. We appreciate your understanding and patience!")
 
 # Add three randomized questions columns
 col1, col2, col3 = st.columns(3)

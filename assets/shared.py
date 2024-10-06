@@ -104,7 +104,7 @@ div.stButton > button:first-child {
     cursor: pointer;
     transition-duration: 0.3s;
     height: auto; /* Allow height to adjust automatically */
-    min-height: 100px; /* Set a minimum height */
+    min-height: 120px; /* Set a minimum height */
 }
 div.stButton > button:first-child:hover {
     background-color: #e0e0e0;
