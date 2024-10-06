@@ -19,6 +19,8 @@ if "response" not in st.session_state:
     st.session_state.response = ""
 if "button_questions" not in st.session_state:
     st.session_state.button_questions = random.sample(PREDEFINED_QUESTIONS, 3)
+if "recent_model" not in st.session_state:
+    st.session_state.recent_model = ""
 
 # Create title
 st.title("Resume Q&A")
@@ -65,6 +67,7 @@ def send_prompt(input_question, question_type):
             model = genai.GenerativeModel(model_name)
             st.session_state.response = model.generate_content(prompt)
             if st.session_state.response:  # Check if response is successful
+                st.session_state.recent_model = model
                 break  # Exit loop if successful
         except Exception as e:
             print(f"Error with model {model_name}: {e}")
@@ -97,3 +100,4 @@ if st.session_state.user_question and st.session_state.response:
     st.divider()
     st.subheader(st.session_state.user_question)
     st.markdown(st.session_state.response.text)
+    st.info(f"**Model used: **: {st.session_state.recent_model}")
