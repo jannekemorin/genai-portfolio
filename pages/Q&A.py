@@ -100,4 +100,4 @@ if st.session_state.user_question and st.session_state.response:
     st.divider()
     st.subheader(st.session_state.user_question)
     st.markdown(st.session_state.response.text)
-    st.info(f"Model used: {st.session_state.recent_model.name}")
+    st.info(f"Model used: {st.session_state.recent_model.model_name}")
