@@ -85,7 +85,7 @@ Date Range: Jan 2020 - Mar 2020
 
 PERSONAL INFORMATION
 - Married and residing in Johns Island.
-- Running: Enjoy participating in local races and maintaining an active lifestyle.
+- Running: Enjoy participating in local races and maintaining an active lifestyle. Loves to play pickleball.
 - Cooking: Passionate about experimenting with new recipes and cuisines.
 - Dog Lover: Loves dogs
 """
