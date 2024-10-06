@@ -111,16 +111,17 @@ div.stButton > button:first-child {
     transition-duration: 0.3s;
     height: 100px; /* Fixed height for all buttons */
 }
-div.stButton:hover {
-    background-color: #e0e0e0; /* Slightly darker grey on hover */
-    border-color: #ccc; /* Darker border on hover */
+div.stButton > button:first-child:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
 }
 </style>
 """
 
 MODEL_DICT = {
-    "gemini-1.5-pro-exp-0827 - tasks requiring deep analysis and extended context.":"gemini-1.5-pro-exp-0827",
-    "gemini-1.5-flash-exp-0827 - tasks requiring quick responses.":"gemini-1.5-flash-exp-0827"
+    "gemini-1.5-flash-exp-0827 - tasks requiring quick responses.":"gemini-1.5-flash-exp-0827",
+    "gemini-1.5-pro-exp-0827 - tasks requiring deep analysis and extended context.":"gemini-1.5-pro-exp-0827"
 }
 
 # Function to encode an image to Base64
