@@ -14,11 +14,12 @@ col1, col2 = st.columns([1, 2])
 
 with col1:
     # Introduction with emphasis
-    st.markdown("### I am a **young professional with a strong interest in AI/ML.**")
+    st.markdown("### **Aspiring AI/ML Specialist**")
     st.markdown(
-        """
-        Passionate about leveraging technology to solve real-world problems. 
-        I enjoy exploring new AI/ML techniques and collaborating on innovative projects.
+        f"""
+        I am passionate about leveraging technology to solve real-world problems. 
+        I enjoy exploring new AI/ML tools and techniques as well as collaborating with others on innovative projects.
+        \n\nPlease check out my resume below or visit the :rainbow-background[Q&A tab] to learn more!
         """
     )
     
@@ -44,7 +45,7 @@ with col1:
     email_icon = encode_image_to_base64("assets/Email.png")
     st.markdown(
         f"""
-        <h3>Connect with me:</h3>
+        <h3>Let's Connect!</h3>
         <p style="margin-bottom: 15px;">
             <a href="https://www.linkedin.com/in/jannekeclever/" target="_blank" style="text-decoration: none; color: black;">
                 <img src="data:image/png;base64,{LI_icon}" width="30" height="30" style="vertical-align: middle; margin-right: 8px;" />

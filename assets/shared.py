@@ -115,7 +115,8 @@ div.stButton > button:first-child:hover {
 
 MODEL_DICT = {
     "Gemini Flash - tasks requiring quick responses.":"gemini-1.5-flash-exp-0827",
-    "Gemini Pro - tasks requiring deep analysis and extended context.":"gemini-1.5-pro-exp-0827"
+    "Gemini Pro - tasks requiring deep analysis and extended context.":"gemini-1.5-pro-exp-0827",
+    "Gemma - balanced approach for both quick responses and detailed analysis.":"gemma-2-2b-it"
 }
 
 # Function to encode an image to Base64
