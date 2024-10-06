@@ -5,12 +5,12 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from assets.shared import *
 
 # Set page configuration
-st.set_page_config(page_title="Janneke Clever", layout="wide")
+st.set_page_config(page_title="Home", layout="wide")
 
 st.title("Hi, I'm Janneke Clever!")
 
 # Create columns for layout
-col1, col2 = st.columns([4, 8])
+col1, col2 = st.columns([1, 2])
 
 with col1:
     # Introduction with emphasis
@@ -69,4 +69,4 @@ with col1:
 
 with col2:
     # Display image with adjusted size
-    st.image("./assets/Graphic3.png", width=500)  # Adjust width as needed
+    st.image("./assets/Graphic.png", width=500)  # Adjust width as needed
