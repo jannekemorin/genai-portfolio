@@ -39,19 +39,19 @@ with col1:
         <h3>Connect with me:</h3>
         <p style="margin-bottom: 10px;">
             <a href="https://www.linkedin.com/in/jannekeclever/" target="_blank" style="text-decoration: none; color: black;">
-                <img src="./assets/LinkedIn.png" width="25" height="25" style="vertical-align: middle;" />
+                <img src="assets/LinkedIn.png" width="25" height="25" style="vertical-align: middle;" />
                 LinkedIn
             </a>
         </p>
         <p>
             <a href="mailto:jannekemorin@gmail.com" style="text-decoration: none; color: black;">
-                <img src="./assets/Email.png" width="25" height="25" style="vertical-align: middle;" />
+                <img src="assets/Email.png" width="25" height="25" style="vertical-align: middle;" />
                 Email
             </a>
         </p>
         <p>
             <a href="https://github.com/jannekemorin" style="text-decoration: none; color: black;">
-                <img src="./assets/GitHub.png" width="25" height="25" style="vertical-align: middle;" />
+                <img src="assets/GitHub.png" width="25" height="25" style="vertical-align: middle;" />
                 Email
             </a>
         </p>
