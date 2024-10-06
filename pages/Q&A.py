@@ -37,29 +37,29 @@ st.markdown("Try a sample question or add your own below!")
 
 # Function to call API based on question type
 def send_prompt(input_question, question_type):
-    try:
-        if question_type == "button":
-            st.session_state.user_question = input_question
-        else:
-            st.session_state.user_question = st.session_state.custom_input
+    #try:
+    if question_type == "button":
+        st.session_state.user_question = input_question
+    else:
+        st.session_state.user_question = st.session_state.custom_input
 
-        prompt = f"""
-        As an advocate for the candidate, please focus exclusively on the following resume details:
-        {RESUME_TEXT}
+    prompt = f"""
+    As an advocate for the candidate, please focus exclusively on the following resume details:
+    {RESUME_TEXT}
 
-        Answer the question for potential recruiters, keeping the response professional, positive, and emphasizing the candidate's strengths, experiences, and suitability for the role.
+    Answer the question for potential recruiters, keeping the response professional, positive, and emphasizing the candidate's strengths, experiences, and suitability for the role.
 
-        Please refrain from discussing any topics not directly related to the resume content. 
-        For any questions not explicitly answered in the resume, please direct inquiries to the candidate's email: jannekemorin@gmail.com.
+    Please refrain from discussing any topics not directly related to the resume content. 
+    For any questions not explicitly answered in the resume, please direct inquiries to the candidate's email: jannekemorin@gmail.com.
 
-        Question: {st.session_state.user_question}
-        """
+    Question: {st.session_state.user_question}
+    """
 
-        # Generate a response from the model
-        model = genai.GenerativeModel(MODEL_DICT[st.session_state.selected_model])
-        st.session_state.response = model.generate_content(prompt)
-    except:
-        st.warning("Oops! It looks like we've reached our chat limit for now. Please try again later. Thank you for your patience!")
+    # Generate a response from the model
+    model = genai.GenerativeModel(MODEL_DICT[st.session_state.selected_model])
+    st.session_state.response = model.generate_content(prompt)
+    #except:
+        #st.warning("Oops! It looks like we've reached our chat limit for now. Please try again later. Thank you for your patience!")
 
 # Add three randomized questions columns
 col1, col2, col3 = st.columns(3)
