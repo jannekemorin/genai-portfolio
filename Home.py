@@ -12,7 +12,7 @@ st.markdown(
     """
     <style>
     /* Hide elements on mobile devices */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 390px) {
         .hide-on-mobile {
             display: none;
         }
