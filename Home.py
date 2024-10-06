@@ -7,6 +7,21 @@ from assets.shared import *
 # Set page configuration
 st.set_page_config(page_title="Home", layout="wide")
 
+# Add custom CSS for responsive design
+st.markdown(
+    """
+    <style>
+    /* Hide elements on mobile devices */
+    @media only screen and (max-width: 600px) {
+        .hide-on-mobile {
+            display: none;
+        }
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("Hi, I'm Janneke Clever!")
 
 # Create columns for layout
@@ -72,5 +87,7 @@ with col1:
     )
 
 with col2:
-    # Display image with adjusted size
+    # Display image with adjusted size and hide on mobile class
+    st.markdown('<div class="hide-on-mobile">', unsafe_allow_html=True)
     st.image("./assets/Graphic.png", width=500)  # Adjust width as needed
+    st.markdown('</div>', unsafe_allow_html=True)
