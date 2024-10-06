@@ -44,7 +44,8 @@ with col1:
 
 with col2:
     st.image("./assets/Graphic.png", width=500)  # Adjust width as needed
-    
+
+# Add sections with icons
 col11, col12 = st.columns([1, 2])
 with col11:
     st.divider()
