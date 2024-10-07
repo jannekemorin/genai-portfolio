@@ -24,7 +24,7 @@ if "recent_model" not in st.session_state:
 
 # Create title
 st.title("Resume Q&A")
-st.info("Powered by Google Gemini Pro")
+st.info("Powered by Google Gemini")
 st.radio("Select a model family:", list(MODEL_DICT.keys()), key="selected_model")
 
 # Custom CSS to style buttons like ChatGPT
