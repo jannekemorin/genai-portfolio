@@ -39,7 +39,7 @@ with col1:
     )
     
     if st.button("🗨️ Resume Q&A"):
-        st.switch_page("pages/Q&A")
+        st.switch_page("pages/Q&A.py")
     
     st.divider()
 
