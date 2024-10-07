@@ -3,7 +3,6 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from assets.shared import *
-from user_agents import parse
 
 # Set page configuration
 st.set_page_config(page_title="Home", layout="wide")
