@@ -10,7 +10,7 @@ st.set_page_config(page_title="Home", layout="wide")
 st.title("Hi, I'm Janneke Clever!")
 
 # Create columns for layout
-col1, col2 = st.columns([1, 2])
+col1, col2, col3 = st.columns([1, .24,  2])
 
 with col1:
     # Introduction with emphasis
@@ -40,15 +40,15 @@ with col1:
     
     if st.button("🗨️ Resume Q&A"):
         st.switch_page("pages/Q&A.py")
+    
+    st.divider()
 
-with col2:
-    st.image("./assets/Graphic.png", width=350)  # Adjust width as needed
+with col3:
+    st.image("./assets/Graphic.png", width=400)  # Adjust width as needed
 
 # Add sections with icons
-col11, col12 = st.columns([1, 2])
+col11, col12, col13 = st.columns([1, .25, 2])
 with col11:
-    st.divider()
-    
     # Add links for LinkedIn and email with icons
     LI_icon = encode_image_to_base64("assets/LinkedIn.png")
     GH_icon = encode_image_to_base64("assets/GitHub.png")
