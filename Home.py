@@ -42,7 +42,7 @@ with col1:
         st.switch_page("pages/Q&A.py")
 
 with col2:
-    st.image("./assets/Graphic.png", width=500)  # Adjust width as needed
+    st.image("./assets/Graphic.png", width=350)  # Adjust width as needed
 
 # Add sections with icons
 col11, col12 = st.columns([1, 2])
