@@ -100,7 +100,7 @@ div.stButton > button:first-child {
     border-radius: 8px; /* Rounded edges */
     text-align: left; /* Left align the text */
     display: block;
-    width: 75%; /* Full width inside column */
+    width: 90%; /* Full width inside column */
     margin: 10px 0;
     cursor: pointer;
     transition-duration: 0.3s;
