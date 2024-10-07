@@ -25,7 +25,7 @@ if "recent_model" not in st.session_state:
 # Create title
 st.title("Resume Q&A")
 st.info("Powered by Google Gemini Pro")
-st.radio("Select a model family", list(MODEL_DICT.keys()), key="selected_model")
+st.radio("Select a model family:", list(MODEL_DICT.keys()), key="selected_model")
 
 # Custom CSS to style buttons like ChatGPT
 st.markdown(
@@ -34,8 +34,8 @@ st.markdown(
 )
 
 # Create section for predefined questions
-st.subheader("Get started")
-st.markdown("Try a sample question or add your own below!")
+#st.subheader("Get started")
+st.subheader("Choose a preset question or input your own below!")
 
 # Function to call API based on question type
 def send_prompt(input_question, question_type):
