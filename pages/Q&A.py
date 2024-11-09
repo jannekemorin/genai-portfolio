@@ -6,7 +6,7 @@ import random
 # Configure the API key
 genai.configure(api_key=st.secrets["API_KEY"])
 
-# Set page configuration
+# Set page configurations
 st.set_page_config(page_title="Q&A", layout="wide")
 
 # Predefined questions for the user to select from

@@ -1,7 +1,7 @@
 import streamlit as st
 import base64
 
-# Set page configuration
+# Set page configurations
 st.set_page_config(page_title="Home", layout="wide")
 
 # Function to encode an image to Base64
