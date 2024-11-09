@@ -161,10 +161,13 @@ if st.session_state.user_question and st.session_state.response:
     
     with col2:
         st.divider()
-        st.subheader(st.session_state.user_question)
+        # Display user question
+        with st.chat_message("User"):
+            st.markdown(f"**{st.session_state.user_question}**")
 
         # Display the generated response text
-        st.markdown(st.session_state.response.text)
+        with st.chat_message("Assistant"):
+            st.markdown(st.session_state.response.text)
 
         # Display which model was used to generate this response
         st.info(f"Model used: {st.session_state.recent_model}")
