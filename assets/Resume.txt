@@ -1,0 +1,61 @@
+JANNEKE CLEVER  
+Location: Charleston, SC
+Phone: 843.467.1821
+Email: jannekemorin@gmail.com
+LinkedIn linkedin.com/in/jannekeclever
+
+SUMMARY
+Dynamic Data Scientist with a software engineering background and a knack for crafting innovative, data-driven solutions. Adept at developing AI applications—including Generative AI (RAG, Agentic AI)—on leading cloud platforms. Proven track record of modernizing systems, streamlining workflows, and creating custom solutions that drive business success.
+
+EXPERIENCE
+AI/ML Consultant II; Capgemini Government Solutions – Feb 2024 to Present
+Developed Agentic AI system for advanced Q&A, leveraging SQL, documentation, and visualization tools.
+Built scalable Generative AI prototype on AWS to transform information retrieval and response generation.
+Modernized legacy R-based classification model using Azure ML, improving transparency and efficiency.
+Optimized key report generation, automating data prep steps to achieve a 75% reduction in manual effort. 
+Created central AI knowledge base, driving ethical standards across projects, training, and go-to-market.
+
+AI/ML Consultant I; Capgemini Government Solutions – Jan 2022 to Jan 2024
+Spearheaded development of Power BI-based zip code lookup tool, enabling seamless program referrals nationwide.
+Improved data accuracy and compliance by implementing Azure AI-driven form processing and correction.
+Led company-wide hackathon fostering employee upskilling in AI and sustainability initiatives.
+Supported AI-related proposal bids by collecting qualifications and structuring key data.
+
+Technical Operations Specialist; Ceterus – May 2020 to Sep 2021
+Managed and responded to hundreds of complex product support tickets.
+Accurately documented and escalated technical issues to the Software Engineering Team.
+Utilized technologies such as SQL, Curl, and Google Data Studio to analyze information for ad hoc requests.
+Revamped technical processes for improved efficiency while clearly documenting new procedures.
+
+Software Engineer; Fogchain, Inc. – May 2019 to August 2019
+Constructed an interactive, introductory course to load testing through Apache JMeter.
+Shadowed senior engineers to learn best practices in coding and system design.
+Learned Git version control to manage and track code changes across projects.
+
+EDUCATION
+Bachelor of Science – BS, Computer Science, minor: Data Science – College of Charleston
+Graduated: Fall 2021 | GPA: 3.98 | Honors College | Computer Science Tutor 
+
+SKILLS
+Programming: Python, Java, R, C, SQL, JavaScript, HTML, CSS, Git
+Data Analytics: 5+ years experience in Data Analytics, Modeling, Visualization (Power BI)
+Cloud Platforms: Proficient in Azure, AWS, Google Cloud (GenAI L-400 Certified)
+Generative AI: Skilled in building with multiple LLMs (Gemini, Claude, Llama) and Agentic AI frameworks (CrewAI)
+AI/ML: Proficient in Python libraries (Scikit-learn, Pandas, Matplotlib) with versatility across multiple ML frameworks
+
+AWARDS
+- School of Science and Mathematics Research Grant Recipient - CofC, Summer 2019
+- Richard Crosby Award for highest achievement in CSCI 220 (introductory CS class) - CofC, Spring 2019
+- First Year Writing Award - CofC, Spring 2019
+
+VOLUNTEER EXPERIENCE
+Title: Student Mentor
+Organization: INTelligence Elementary School Program
+Date Range: Jan 2020 - Mar 2020
+- Worked with peers to introduce coding concepts to local elementary school students.
+
+PERSONAL INFORMATION
+- Married and residing in Johns Island.
+- Running: Enjoy participating in local races and maintaining an active lifestyle. Loves to play pickleball.
+- Cooking: Passionate about experimenting with new recipes and cuisines.
+- Dog Lover: Loves dogs
