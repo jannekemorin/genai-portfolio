@@ -18,7 +18,6 @@ GITHUB_ICON_PATH = "assets/GitHub.png"
 EMAIL_ICON_PATH = "assets/Email.png"
 
 # --- MAIN CONTENT ---
-
 # Create columns for layout
 col1, col2, col3, col4 = st.columns([1, 2.5, 2, 1])
 
