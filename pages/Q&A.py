@@ -56,7 +56,7 @@ if "recent_model" not in st.session_state:
     st.session_state.recent_model = ""
 
 # Center content using columns 
-col1, col2, col3 = st.columns([1.25, 9, 1.25])
+col1, col2, col3 = st.columns([1, 5.5, 1])
 
 with col2:  # Central column for main content
     # Set up the app title and description
