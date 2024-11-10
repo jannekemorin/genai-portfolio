@@ -74,9 +74,6 @@ with col2:  # Central column for main content
             div.stButton > button:first-child {
                 font-size: 1em;
                 padding: 1em;
-                color: #333;
-                background-color: #f0f2f6;
-                border: 1px solid #ddd;
                 border-radius: 8px;
                 text-align: left;
                 display: block;
@@ -88,8 +85,6 @@ with col2:  # Central column for main content
                 min-height: 100px;
             }
             div.stButton > button:first-child:hover {
-                background-color: #e0e0e0;
-                border-color: #ccc;
                 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             }
         </style>

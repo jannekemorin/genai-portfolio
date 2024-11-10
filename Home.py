@@ -76,22 +76,22 @@ with col2:
         """
         <h3>Let's Connect!</h3>
         <p style="margin-bottom: 15px;">
-            <a href="{linkedin_link}" target="_blank" style="text-decoration: none; color: black;">
+            <a href="{linkedin_link}" target="_blank" style="text-decoration: none;">
                 <img src="data:image/png;base64,{linkedin_icon}" width="30" height="30" style="vertical-align: middle; margin-right: 8px;" />
-                LinkedIn
             </a>
+            <span>LinkedIn</span>
         </p>
         <p style="margin-bottom: 15px;">
-            <a href="{email_link}" style="text-decoration: none; color: black;">
+            <a href="{email_link}" style="text-decoration: none;">
                 <img src="data:image/png;base64,{email_icon}" width="30" height="30" style="vertical-align: middle; margin-right: 8px;" />
-                Email
             </a>
+            <span>Email</span>
         </p>
         <p style="margin-bottom: 15px;">
-            <a href="{github_link}" target="_blank" style="text-decoration: none; color: black;">
+            <a href="{github_link}" target="_blank" style="text-decoration: none;">
                 <img src="data:image/png;base64,{github_icon}" width="30" height="30" style="vertical-align: middle; margin-right: 8px;" />
-                GitHub
             </a>
+            <span>GitHub</span>
         </p>
         """.format(
             linkedin_link=LINKEDIN_LINK,
