@@ -10,17 +10,18 @@ genai.configure(api_key=st.secrets["API_KEY"])
 st.set_page_config(page_title="Q&A", layout="wide")
 
 # Predefined questions for the user to select from
+FIRST_NAME = "Janneke"
 PREDEFINED_QUESTIONS = [
-    "👩‍💻 What is Janneke's current role?",
-    "💼 What are Janneke's top skills?",
-    "💪 What are Janneke's strengths?",
-    "🎯 What are Janneke's key accomplishments?",
-    "📈 How has Janneke contributed to the growth of previous organizations?",
-    "🏆 What awards or recognitions has Janneke received?",
-    "🌍 What industries or sectors has Janneke worked in?",
-    "📚 What is Janneke's educational background?",
-    "🤝 How does Janneke collaborate with team members?",
-    "🔧 What tools and technologies is Janneke proficient in?"
+    f"👩‍💻 What is {FIRST_NAME}'s current role?",
+    f"💼 What are {FIRST_NAME}'s top skills?",
+    f"💪 What are {FIRST_NAME}'s strengths?",
+    f"🎯 What are {FIRST_NAME}'s key accomplishments?",
+    f"📈 How has {FIRST_NAME} contributed to the growth of previous organizations?",
+    f"🏆 What awards or recognitions has {FIRST_NAME} received?",
+    f"🌍 What industries or sectors has {FIRST_NAME} worked in?",
+    f"📚 What is {FIRST_NAME}'s educational background?",
+    f"🤝 How does {FIRST_NAME} collaborate with team members?",
+    f"🔧 What tools and technologies is {FIRST_NAME} proficient in?"
 ]
 
 # Model versions for both Flash and Pro variants
@@ -74,7 +75,7 @@ with col2:  # Central column for main content
                 font-size: 1em;
                 padding: 1em;
                 color: #333;
-                background-color: #f9f9f9;
+                background-color: #f0f2f6;
                 border: 1px solid #ddd;
                 border-radius: 8px;
                 text-align: left;

@@ -17,6 +17,11 @@ LINKEDIN_ICON_PATH = "assets/LinkedIn.png"
 GITHUB_ICON_PATH = "assets/GitHub.png"
 EMAIL_ICON_PATH = "assets/Email.png"
 
+# Links to LinkedIn, Email, and GitHub accounts
+LINKEDIN_LINK = "https://www.linkedin.com/in/jannekeclever/"
+EMAIL_LINK = "mailto:jannekemorin@gmail.com"
+GITHUB_LINK = "https://github.com/jannekemorin"
+
 # --- MAIN CONTENT ---
 # Create columns for layout
 col1, col2, col3, col4 = st.columns([1, 2.5, 2, 1])
@@ -71,26 +76,29 @@ with col2:
         """
         <h3>Let's Connect!</h3>
         <p style="margin-bottom: 15px;">
-            <a href="https://www.linkedin.com/in/jannekeclever/" target="_blank" style="text-decoration: none; color: black;">
+            <a href="{linkedin_link}" target="_blank" style="text-decoration: none; color: black;">
                 <img src="data:image/png;base64,{linkedin_icon}" width="30" height="30" style="vertical-align: middle; margin-right: 8px;" />
                 LinkedIn
             </a>
         </p>
         <p style="margin-bottom: 15px;">
-            <a href="mailto:jannekemorin@gmail.com" style="text-decoration: none; color: black;">
+            <a href="{email_link}" style="text-decoration: none; color: black;">
                 <img src="data:image/png;base64,{email_icon}" width="30" height="30" style="vertical-align: middle; margin-right: 8px;" />
                 Email
             </a>
         </p>
         <p style="margin-bottom: 15px;">
-            <a href="https://github.com/jannekemorin" target="_blank" style="text-decoration: none; color: black;">
+            <a href="{github_link}" target="_blank" style="text-decoration: none; color: black;">
                 <img src="data:image/png;base64,{github_icon}" width="30" height="30" style="vertical-align: middle; margin-right: 8px;" />
                 GitHub
             </a>
         </p>
         """.format(
+            linkedin_link=LINKEDIN_LINK,
             linkedin_icon=linkedin_icon_base64,
+            email_link=EMAIL_LINK,
             email_icon=email_icon_base64,
+            github_link=GITHUB_LINK,
             github_icon=github_icon_base64,
         ),
         unsafe_allow_html=True,

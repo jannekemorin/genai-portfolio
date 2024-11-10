@@ -88,8 +88,14 @@ Make it **yours** by updating these files:
 ### 🏠 Homepage Content
 
 - **Home.py**:
-  - Update the title and markdown text with your personal details.
-  - Add links to your LinkedIn, email, and GitHub accounts.
+  - Adjust the title and markdown text with your personal details.
+  - Update the LINKEDIN_LINK, EMAIL_LINK, and GITHUB_LINK variables to reflect your accounts.
+
+### ❓ Q&A Page Content
+
+- **Q&A.py**:
+  - Update the FIRST_NAME variable with your first name to personalize predefined questions.
+  - Optionally, customize the predefined questions by editing the PREDEFINED_QUESTIONS list. You can add, remove, or modify questions to better reflect your experience and expertise.
 
 ---
 
