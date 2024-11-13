@@ -24,7 +24,7 @@ GITHUB_LINK = "https://github.com/jannekemorin"
 
 # --- MAIN CONTENT ---
 # Create columns for layout
-col1, col2, col3, col4 = st.columns([1, 2.5, 2, 1])
+col1, col2, col3, col4 = st.columns([0.5, 2.5, 2, 0.5])
 
 # --- LEFT SECTION (Bio and Resume Download) ---
 with col2:
