@@ -63,7 +63,7 @@ with col3:
 
 # --- CONNECT SECTION (LinkedIn, Email, GitHub) ---
 # Create columns for layout (again for Connect section)
-col1, col2, col3, col4 = st.columns([1, 2.5, 2, 1])
+col1, col2, col3, col4 = st.columns([0.5, 2.5, 2, 0.5])
 
 with col2:
     # Encode icons to Base64 for embedding in HTML
