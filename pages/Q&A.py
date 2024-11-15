@@ -82,7 +82,7 @@ with col2:  # Central column for main content
                 cursor: pointer;
                 transition-duration: 0.3s;
                 height: auto;
-                min-height: 100px;
+                min-height: 110px;
             }
             div.stButton > button:first-child:hover {
                 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
