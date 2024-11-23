@@ -158,5 +158,3 @@ Your portfolio is now live and ready to be shared with the world! 🌍✨ Show o
 ### 💡 Pro Tip: Keep Improving!
 
 Feel free to continue customizing and improving this portfolio as you grow in your GenAI journey!
-
---- 
