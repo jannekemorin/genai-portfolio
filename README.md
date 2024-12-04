@@ -103,24 +103,6 @@ Make it **yours** by updating these files:
   - Optionally, customize the accent color for the application.
 
 The **Home.py** and **pages/Q&A.py** files will pull from this file to customize the homepage and Q&A page, respectively.
----
-
-## 🚀 Publish Your Repository on GitHub
-
-1. In your terminal, while inside the repository directory, run these commands:
-
-   ```bash
-   # Remove original remote URL
-   git remote remove origin
-
-   # Add YOUR GitHub repository as the new remote URL (replace YOUR-USERNAME)
-   git remote add origin https://github.com/YOUR-USERNAME/genai-portfolio.git
-
-   # Push changes to your new GitHub repository
-   git push -u origin master
-   ```
-
-_💡 Why remove the original remote? This ensures that your repository points to your fork instead of the original repository._
 
 ---
 

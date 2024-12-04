@@ -1,5 +1,7 @@
 FIRST_NAME = "Janneke"
 
+PRONOUNS = "She/Her/Hers"
+
 PREDEFINED_QUESTIONS = [
     f"👩‍💻 What is {FIRST_NAME}'s current role?",
     f"💼 What are {FIRST_NAME}'s top skills?",

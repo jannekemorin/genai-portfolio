@@ -103,7 +103,9 @@ with col2:  # Central column for main content
             As an advocate for the professional, please focus exclusively on the following resume details:
             {resume_text}
 
-            Answer the question for the individual's network, keeping the response professional, positive, and emphasizing the candidate's strengths, experiences, and suitability.
+            Answer the question for the individual's network, keeping the response professional, positive, and emphasizing the candidate's strengths, experiences, and suitability. 
+            
+            Please use pronouns {config.PRONOUNS} when referring to the individual.
 
             Please refrain from discussing any topics not directly related to the resume content.
 
