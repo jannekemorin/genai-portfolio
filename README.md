@@ -95,6 +95,7 @@ Make it **yours** by updating these files:
 
 - **config.py**:
   - Update the `FIRST_NAME` variable with your first name to personalize predefined questions.
+  - Update the `PRONOUNS` variable. This will be included in the prompt so that the LLM refers to you using your pronouns.
   - Optionally, customize the predefined questions by editing the `PREDEFINED_QUESTIONS` list. You can add, remove, or modify questions to better reflect your experience and expertise.
   - Update the `LINKEDIN_LINK`, `EMAIL_LINK`, and `GITHUB_LINK` variables to reflect your accounts.
   - Adjust the `HOMEPAGE_TITLE`, `HOMEPAGE_SUBTITLE`, and `HOMEPAGE_BIO` to reflect your specialties.
