@@ -7,15 +7,13 @@ Welcome to this **lightweight, interactive portfolio template** that showcases y
 ## 🚀 Fork the Repository
 
 1. Go to the repository on GitHub: `https://github.com/jannekemorin/genai-portfolio`.
-2. Click the **Fork** button in the top-right corner of the page to create a copy of the repository under your GitHub account.
+2. Click the **Fork** button in the top-right corner of the page, leaving all settings as default, to create a copy of the repository under your GitHub account.
 3. Open your terminal and navigate to the folder where you'd like to download your forked repository.
 4. Run the following command to clone your forked repository (replace `<your-username>` with your GitHub username):
 
    ```bash
    git clone https://github.com/<your-username>/genai-portfolio
    ```
-
-   _💡 Tip: Your GitHub username is displayed in the top-right corner of your GitHub account when logged in._
 
 ---
 
@@ -35,20 +33,20 @@ After forking and cloning the repository, you need to install the required depen
    pip install -r requirements.txt
    ```
 
-   _💡 Note: Ensure that you have Python and `pip` installed on your system. You can check by running `python --version` and `pip --version`. If not installed, refer to [Python's installation guide](https://www.python.org/downloads/)._
+   _💡 Note: Ensure that you have Python and `pip` installed on your system. You can check by running `python --version` and `pip --version`. 
 
 ---
 
 ## 🔍 Open the Repository
 
-Open the forked repository in your favorite code editor.
+Ensure you have the forked repository open in your favorite code editor.
 
 ---
 
 ## 🔑 Add Your Gemini API Key
 
 1. [Get a free Gemini API Key from Google AI Studio](https://aistudio.google.com/app/apikey).
-2. Inside the **.streamlit** folder, create a file named `secrets.toml`. If this folder doesn’t exist, create it manually.
+2. Inside the **.streamlit** folder, create a file named `secrets.toml`. 
 3. Add the following line to the file, replacing `YOUR_GEMINI_API_KEY` with your actual API key:
 
    ```toml
@@ -93,18 +91,18 @@ Make it **yours** by updating these files:
 - **assets/Resume.pdf**: Upload a PDF version of your resume.
 - **assets/Resume.txt**: Replace with plain text from your resume.
 
-### 🏠 Homepage Content
+### 🗂 Configuration
 
-- **Home.py**:
-  - Adjust the title and markdown text with your personal details.
-  - Update the `LINKEDIN_LINK`, `EMAIL_LINK`, and `GITHUB_LINK` variables to reflect your accounts.
-
-### ❓ Q&A Page Content
-
-- **Q&A.py**:
+- **config.py**:
   - Update the `FIRST_NAME` variable with your first name to personalize predefined questions.
   - Optionally, customize the predefined questions by editing the `PREDEFINED_QUESTIONS` list. You can add, remove, or modify questions to better reflect your experience and expertise.
+  - Update the `LINKEDIN_LINK`, `EMAIL_LINK`, and `GITHUB_LINK` variables to reflect your accounts.
+  - Adjust the `HOMEPAGE_TITLE`, `HOMEPAGE_SUBTITLE`, and `HOMEPAGE_BIO` to reflect your specialties.
 
+- **.streamlit/config.toml**:
+  - Optionally, customize the accent color for the application.
+
+The **Home.py** and **pages/Q&A.py** files will pull from this file to customize the homepage and Q&A page, respectively.
 ---
 
 ## 🚀 Publish Your Repository on GitHub

@@ -2,27 +2,18 @@
 import google.generativeai as genai
 import streamlit as st
 import random
+import sys
+import os
+current_folder = os.path.dirname(os.path.realpath(__file__))
+parent_folder = os.path.dirname(current_folder)
+sys.path.append(parent_folder)
+import config
 
 # Configure the API key
 genai.configure(api_key=st.secrets["API_KEY"])
 
 # Set page configurations
 st.set_page_config(page_title="Q&A", layout="wide")
-
-# Predefined questions for the user to select from
-FIRST_NAME = "Janneke"
-PREDEFINED_QUESTIONS = [
-    f"👩‍💻 What is {FIRST_NAME}'s current role?",
-    f"💼 What are {FIRST_NAME}'s top skills?",
-    f"💪 What are {FIRST_NAME}'s strengths?",
-    f"🎯 What are {FIRST_NAME}'s key accomplishments?",
-    f"📈 How has {FIRST_NAME} contributed to the growth of previous organizations?",
-    f"🏆 What awards or recognitions has {FIRST_NAME} received?",
-    f"🌍 What industries or sectors has {FIRST_NAME} worked in?",
-    f"📚 What is {FIRST_NAME}'s educational background?",
-    f"🤝 How does {FIRST_NAME} collaborate with team members?",
-    f"🔧 What tools and technologies is {FIRST_NAME} proficient in?"
-]
 
 # Model versions for both Flash and Pro variants
 GEMINI_FLASH_MODELS = [
@@ -40,8 +31,8 @@ GEMINI_PRO_MODELS = [
 ]
 
 MODEL_DICT = {
-    "Gemini Flash - tasks requiring quick responses.": "Flash",
-    "Gemini Pro - tasks requiring deep analysis and extended context.": "Pro"
+    "Gemini Flash - Tasks requiring quick responses.": "Flash",
+    "Gemini Pro - Tasks requiring deep analysis and extended context.": "Pro"
 }
 
 # Initialize session state variables
@@ -52,7 +43,7 @@ if "user_question" not in st.session_state:
 if "response" not in st.session_state:
     st.session_state.response = ""
 if "button_questions" not in st.session_state:
-    st.session_state.button_questions = random.sample(PREDEFINED_QUESTIONS, 3)
+    st.session_state.button_questions = random.sample(config.PREDEFINED_QUESTIONS, 3)
 if "recent_model" not in st.session_state:
     st.session_state.recent_model = ""
 

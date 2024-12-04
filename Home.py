@@ -1,5 +1,6 @@
 import streamlit as st
 import base64
+import config
 
 # Set page configurations
 st.set_page_config(page_title="Home", layout="wide")
@@ -11,16 +12,11 @@ def encode_image_to_base64(image_path):
         return base64.b64encode(img_file.read()).decode()
 
 # Path to the local PDF file and images
-PDF_FILE_PATH = "./assets/Resume.pdf"  # Replace with your local PDF path
+PDF_FILE_PATH = "./assets/Resume.pdf"  
 HEADSHOT_PATH = "./assets/Headshot.png"
 LINKEDIN_ICON_PATH = "assets/LinkedIn.png"
 GITHUB_ICON_PATH = "assets/GitHub.png"
 EMAIL_ICON_PATH = "assets/Email.png"
-
-# Links to LinkedIn, Email, and GitHub accounts
-LINKEDIN_LINK = "https://www.linkedin.com/in/jannekeclever/"
-EMAIL_LINK = "mailto:jannekemorin@gmail.com"
-GITHUB_LINK = "https://github.com/jannekemorin"
 
 # --- MAIN CONTENT ---
 # Create columns for layout
@@ -29,15 +25,9 @@ col1, col2, col3, col4 = st.columns([0.5, 2.5, 2, 0.5])
 # --- LEFT SECTION (Bio and Resume Download) ---
 with col2:
     # Introduction with emphasis
-    st.title("Hi, I'm Janneke Clever!")
-    st.markdown("### **AI/ML Specialist**")
-    st.markdown(
-        """
-        I am passionate about leveraging :violet-background[technology] to solve real-world problems. 
-        I enjoy exploring new :violet-background[AI/ML] tools and techniques as well as collaborating with others on innovative projects.
-        \n\nPlease check out my resume below or visit the Q&A tab to learn more!
-        """
-    )
+    st.title(config.HOMEPAGE_TITLE)
+    st.markdown(f"### **{config.HOMEPAGE_SUBTITLE}**")
+    st.markdown(config.HOMEPAGE_BIO)
 
     # Open the resume PDF in binary mode
     with open(PDF_FILE_PATH, "rb") as pdf_file:
@@ -47,7 +37,7 @@ with col2:
     st.download_button(
         label="📄 Download Resume",  # You can replace the emoji with text or another icon
         data=pdf_bytes,
-        file_name="Janneke's Resume.pdf",
+        file_name = f"{config.FIRST_NAME}{"\'" if config.FIRST_NAME.endswith('s') else "\'s"} Resume.pdf",
         mime="application/pdf"
     )
 
@@ -94,11 +84,11 @@ with col2:
             <span>GitHub</span>
         </p>
         """.format(
-            linkedin_link=LINKEDIN_LINK,
+            linkedin_link=config.LINKEDIN_LINK,
             linkedin_icon=linkedin_icon_base64,
-            email_link=EMAIL_LINK,
+            email_link=config.EMAIL_LINK,
             email_icon=email_icon_base64,
-            github_link=GITHUB_LINK,
+            github_link=config.GITHUB_LINK,
             github_icon=github_icon_base64,
         ),
         unsafe_allow_html=True,
