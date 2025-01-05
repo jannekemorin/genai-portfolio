@@ -21,6 +21,6 @@ GITHUB_LINK = "https://github.com/jannekemorin"
 
 HOMEPAGE_TITLE = "Hi, I'm Janneke Clever!"
 HOMEPAGE_SUBTITLE = "AI/ML Specialist"
-HOMEPAGE_BIO = """I am passionate about leveraging :violet-background[technology] to solve real-world problems. 
-                I enjoy exploring new :violet-background[AI/ML] tools and techniques as well as collaborating with others on innovative projects.
+HOMEPAGE_BIO = """I am passionate about leveraging :red-background[technology] to solve real-world problems. 
+                I enjoy exploring new :red-background[AI/ML] tools and techniques as well as collaborating with others on innovative projects.
                 \n\nPlease check out my resume below or visit the Q&A tab to learn more!"""

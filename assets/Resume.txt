@@ -8,7 +8,9 @@ SUMMARY
 Dynamic Data Scientist with a software engineering background and a knack for crafting innovative, data-driven solutions. Adept at developing AI applications—including Generative AI (RAG, Agentic AI)—on leading cloud platforms. Proven track record of modernizing systems, streamlining workflows, and creating custom solutions that drive business success.
 
 EXPERIENCE
-AI/ML Consultant II; Capgemini Government Solutions – Feb 2024 to Present
+AI/ML Engineer; Modus Operandi, Inc. – December 2024 to Present
+
+AI/ML Consultant II; Capgemini Government Solutions – Feb 2024 to December 2024
 Developed Agentic AI system for advanced Q&A, leveraging SQL, documentation, and visualization tools.
 Built scalable Generative AI prototype on AWS to transform information retrieval and response generation.
 Modernized legacy R-based classification model using Azure ML, improving transparency and efficiency.
